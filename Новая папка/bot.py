@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 from aiogram.client.session.aiohttp import AiohttpSession
 load_dotenv()
 api = "8939820108:AAGUSE_m5jo2LzW218tr1wk2Ridrx-PGMTM"
-session = AiohttpSession(proxy="/http://proxy.server:3128")
+session = AiohttpSession(proxy='http://proxy.server:3128')
 bot = Bot(api,session=session)
 dp=Dispatcher()
 
